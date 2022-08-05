@@ -1,5 +1,5 @@
 .section .rodata
-hello: .asciz "hello world\n"
+hello: .asciz "\033[42;30m\nhello world\n"
 .section .text
 myfunc:
     addi    sp, sp, -8
