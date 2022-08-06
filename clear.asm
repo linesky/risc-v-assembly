@@ -1,7 +1,7 @@
 .section .rodata
 hello: .asciz "\033c\033[42;30m\nhello world\n"
 .section .text
-myfunc:
+_start:
     addi    sp, sp, -8
     sd      ra, 0(sp)
     la      a0, hello
