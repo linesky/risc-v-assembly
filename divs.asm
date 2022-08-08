@@ -1,4 +1,5 @@
 
+
 #https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/#
 # divs a2=a0/a1
 #remain a0
@@ -6,6 +7,7 @@ addi a0,x0,5
 addi a1,x0,2
 addi a2,x0,0
 divs:
+beq a1,x0,divs0
 blt a0,a1,divs0
 sub a0,a0,a1
 addi a2,a2,1
